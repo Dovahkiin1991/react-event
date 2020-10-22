@@ -1,1 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Event website build with React.
+Tools used:
+    <ul>
+        <li>React.js</li >
+        <li>Next.js</li>
+    </ul>
