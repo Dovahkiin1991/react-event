@@ -10,7 +10,8 @@ export default function Home() {
       </Head>
 
       <main>
-        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi obcaecati, fugit tempore magni assumenda nesciunt similique
+           explicabo? Dolores earum facere iure fugiat? Necessitatibus ipsam nulla, totam impedit ullam quas!</p>
       </main>
     </div>
   )
