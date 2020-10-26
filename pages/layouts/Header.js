@@ -3,9 +3,7 @@ import Head from 'next/head';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = () => (
-    <div style={{
-        marginBottom: '5%'
-    }}>
+    <div>
       <Head>
         <title>Events app</title>
         <link rel="icon" href="/favicon.ico" />
