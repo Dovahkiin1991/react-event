@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Shedule from '../components/shedule';
 // import "../scss/styles.scss";
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Shedule />
+      
       <section className="why-us">
           <div className="container">
             <h2 className="text-center">Why Should You Attend?</h2>
