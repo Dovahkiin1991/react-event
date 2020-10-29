@@ -19,7 +19,7 @@ let shedule = [
       'time' : '09:45 - 12:30',
       'type' : 'JavaScript Tips',
       'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velisit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
       'speaker' : {
         'photo' : '',
         'name' : 'John McCoist',
@@ -35,7 +35,7 @@ let shedule = [
       'location' : 'Main Hall',
       'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
       'speaker' : {
-        'photo' : '',
+        'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
         'name' : 'John McCoist',
         'position' : 'CEO & Co-Founder at Insider',
       }
@@ -44,9 +44,9 @@ let shedule = [
       'time' : '09:45 - 12:30',
       'type' : 'JavaScript Tips',
       'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+      'text' : 'Donec in velit vel ipsum auctor  lacinia est. Proin dictum eipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
       'speaker' : {
-        'photo' : '',
+        'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
         'name' : 'John McCoist',
         'position' : 'CEO & Co-Founder at Insider',
       }
@@ -57,21 +57,44 @@ let shedule = [
 const sheduleItems = shedule.map((item, index) =>
   <SheduleChild 
     key={index}
-    item={item.type} 
+    item={item} 
   />
 );
 
 export default function Shedule() {
   return (
     <section className="shedule">
-        <div className="container">
-            <h2>Shedule</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur</p>
+      <div className="container">
+          <h2>Schedule</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
 
-          <div className="row">
-            {sheduleItems}
-          </div>
+        <div className="row">
+          {sheduleItems}
         </div>
-      </section>
+      </div>
+
+      <style jsx>{`
+          .shedule {
+            padding-top: 100px;
+            padding-bottom: 100px;
+          }
+          .shedule h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: rgb(49, 49, 49);
+            line-height: 1.25;
+            text-align: center;
+            display: block;
+          }
+          .shedule p {
+            font-size: 18px;
+            color: rgb(97, 97, 97);
+            line-height: 1.667;
+            text-align: center;
+            display: block;
+            margin-bottom: 2rem;
+          }
+      `}</style>
+    </section>
   )
 }
