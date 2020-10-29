@@ -11,6 +11,21 @@ export default function Home() {
       </Head>
 
       <Shedule />
+
+      <section className="promo">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <h2>Our updates</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                 elit. Numquam facilis unde voluptatibus commodi at quidem quas dolorem itaque animi expedita. Animi, rer
+                 um minima ex quasi dolores labore aspernatur cupiditate facere.</p>
+
+              <a href="#" className="promo__play"></a>
+            </div>
+          </div>
+        </div>
+      </section>
       
       <section className="why-us">
           <div className="container">
@@ -83,6 +98,37 @@ export default function Home() {
         .why-us__icon img {
           display: block;
           max-width: 100%;
+        }
+
+        .promo {
+          padding-top: 100px;
+          padding-bottom: 100px;
+          background: #000;
+        }
+        .promo h2 {
+          font-size: 40px;
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          line-height: 1.25;
+          text-align: center;
+          display: block;
+          margin-bottom: 1.5rem;
+        }
+        .promo p {
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          line-height: 1.667;
+          text-align: center;
+          display: block;
+        }
+        .promo__play {
+          background: url('../play__icon.png') no-repeat center center;
+          background-size: cover;
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          display: block;
+          margin: 10px auto 0;
         }
       `}</style>
       </main>
