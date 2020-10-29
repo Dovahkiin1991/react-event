@@ -6,23 +6,32 @@ export default function SheduleChild(props) {
                 <div className="shedulte__item--header">
                     {props.item.date}
                 </div>
-                <span className="shedule__item--time">{props.item.event.time}</span>
-                <span className="shedule__item--type">{props.item.event.type}</span>
-                <span className="shedule__item--location">{props.item.event.location}</span>
-                
-                <p>{props.item.event.text}</p>
-            
-                <div className="shedule__speaker">
-                    <div className="left">
-                        <div className="poster">
-                            <img src={props.item.event.speaker.photo} alt=""/>
+
+                {
+                    props.item.events.map(function(item, i){
+                        return <div key={i} className={'shedulte__item--event '+ (i%2 ? 'odd' : 'even')}>
+                        <span className="shedule__item--time">{item.time}</span>
+                        <span className="shedule__item--type">{item.type}</span>
+                        <span className="shedule__item--location">{item.location}</span>
+                        
+                        <p>{item.text}</p>
+                    
+                        <div className="shedule__speaker">
+                            <div className="left">
+                                <div className="poster">
+                                    <img src={item.speaker.photo} alt=""/>
+                                </div>
+                            </div>
+                            <div className="right">
+                                <span className="name">{item.speaker.name}</span>
+                                <span className="position">{item.speaker.position}</span>
+                            </div>
                         </div>
                     </div>
-                    <div className="right">
-                        <span className="name">{props.item.event.speaker.name}</span>
-                        <span className="position">{props.item.event.speaker.position}</span>
-                    </div>
-                </div>
+                    })
+                }
+                
+                
             </div>
 
             <style jsx>{`
@@ -36,14 +45,9 @@ export default function SheduleChild(props) {
                     border-radius: 5px;
                     background-color: rgb(255, 255, 255);
                     box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.05);
-                    padding: 0 15px 15px;
                 }
                 .shedulte__item--header {
                     display: block;
-                    width: calc(100% + 30px);
-                    margin-left: -15px;
-                    margin-right: -15px;
-                    margin-bottom: 2rem;
                     padding: 15px;
                     font-size: 22px;
                     color: rgb(49, 49, 49);
@@ -52,6 +56,13 @@ export default function SheduleChild(props) {
                     background-image: -moz-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
                     background-image: -webkit-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
                     background-image: -ms-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
+                }
+                .shedulte__item--event {
+                    border-bottom: 1px solid rgb(238, 238, 238);
+                    padding: 20px 15px;
+                }
+                .odd {
+                    background-color: rgb(251, 251, 251);
                 }
                 .shedule__item--time {
                     font-size: 16px;

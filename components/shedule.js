@@ -4,54 +4,85 @@ import SheduleChild from './shedule-child';
 let shedule = [
   {
     'date' : 'Friday, May 10',
-    'event' : {
-      'time' : '08:00 - 09:30',
-      'type' : 'Registration',
-      'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
-      'speaker' : {
-        'photo' : '',
-        'name' : 'John McCoist',
-        'position' : 'CEO & Co-Founder at Insider',
+    'events' : [
+      {
+        'time' : '08:00 - 09:30',
+        'type' : 'Registration',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce eer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'Elon Mask',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
+      },
+      {
+        'time' : '09:45 - 12:30',
+        'type' : 'JavaScript Tips',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculienim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'John McCoist',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
       }
-    },
-    'event' : {
-      'time' : '09:45 - 12:30',
-      'type' : 'JavaScript Tips',
-      'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velisit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
-      'speaker' : {
-        'photo' : '',
-        'name' : 'John McCoist',
-        'position' : 'CEO & Co-Founder at Insider',
-      }
-    }
+    ],
   },
   {
     'date' : 'Friday, May 11',
-    'event' : {
-      'time' : '08:00 - 09:30',
-      'type' : 'Registration',
-      'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
-      'speaker' : {
-        'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
-        'name' : 'John McCoist',
-        'position' : 'CEO & Co-Founder at Insider',
+    'events' : [
+      {
+        'time' : '08:00 - 09:30',
+        'type' : 'Registration',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'John McCoist',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
+      },
+      {
+        'time' : '09:45 - 12:30',
+        'type' : 'JavaScript Tips',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor  lacinia est. Proin dictum eipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'John McCoist',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
       }
-    },
-    'event' : {
-      'time' : '09:45 - 12:30',
-      'type' : 'JavaScript Tips',
-      'location' : 'Main Hall',
-      'text' : 'Donec in velit vel ipsum auctor  lacinia est. Proin dictum eipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
-      'speaker' : {
-        'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
-        'name' : 'John McCoist',
-        'position' : 'CEO & Co-Founder at Insider',
+    ],
+  },
+  {
+    'date' : 'Friday, May 12',
+    'events' : [
+      {
+        'time' : '08:00 - 09:30',
+        'type' : 'Registration',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce eer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'Elon Mask',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
+      },
+      {
+        'time' : '09:45 - 12:30',
+        'type' : 'JavaScript Tips',
+        'location' : 'Main Hall',
+        'text' : 'Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculienim adipiscing aliquet. ',
+        'speaker' : {
+          'photo' : 'https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg',
+          'name' : 'John McCoist',
+          'position' : 'CEO & Co-Founder at Insider',
+        }
       }
-    }
-  }
+    ],
+  },
 ]
 
 const sheduleItems = shedule.map((item, index) =>
