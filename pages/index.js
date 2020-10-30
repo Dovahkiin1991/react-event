@@ -60,6 +60,63 @@ export default function Home() {
           </div>
       </section>
 
+      <section className="tickets">
+        <div className="container">
+          <h2>Tickets</h2>
+
+          <div className="row">
+            <div className="col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div className="item">
+                <span className="item__title">Super Early Bird</span>
+                <span className="item__price">149</span>
+                <span className="item__date">until February 10, 2019</span>
+
+                <span className="item__lang"><b>Language:</b> English</span>
+                <p>We will provide translation devices if needed.</p>
+
+                <a href="#" className="btn">Buy Tickets</a>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div className="item">
+                <span className="item__title">Early Bird</span>
+                <span className="item__price">169</span>
+                <span className="item__date">until February 10, 2019</span>
+
+                <span className="item__lang"><b>Language:</b> English</span>
+                <p>We will provide translation devices if needed.</p>
+
+                <a href="#" className="btn">Buy Tickets</a>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div className="item">
+                <span className="item__title">Regular</span>
+                <span className="item__price">209</span>
+                <span className="item__date">until February 10, 2019</span>
+
+                <span className="item__lang"><b>Language:</b> English</span>
+                <p>We will provide translation devices if needed.</p>
+
+                <a href="#" className="btn">Buy Tickets</a>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div className="item">
+                <span className="item__title">Late Bird</span>
+                <span className="item__price">249</span>
+                <span className="item__date">until February 10, 2019</span>
+
+                <span className="item__lang"><b>Language:</b> English</span>
+                <p>We will provide translation devices if needed.</p>
+
+                <a href="#" className="btn">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
         
       <style jsx>{`
         section.why-us {
@@ -129,6 +186,79 @@ export default function Home() {
           border-radius: 50%;
           display: block;
           margin: 10px auto 0;
+        }
+
+        section.tickets {
+          padding-top: 100px;
+          padding-bottom: 100px;
+          background-image: -moz-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
+          background-image: -webkit-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
+          background-image: -ms-linear-gradient( -86deg, rgb(230,255,175) 0%, rgb(54,242,227) 100%);
+        }
+        section.tickets h2 {
+          font-size: 42px;
+          font-weight: 700;
+          color: #313131;
+          line-height: 1.25;
+          display: block;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        .item {
+          border-radius: 5px;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.05);
+          padding: 35px 15px;
+          text-align: center;
+          height: 100%;
+        }
+        .item__title {
+          font-size: 20px;
+          color: rgb(49, 49, 49);
+          line-height: 1.25;
+          text-align: center;
+          display: block;
+          margin-bottom: 1rem;
+        }
+        .item__price {
+          font-size: 50px;
+          color: rgb(137, 101, 180);
+          line-height: 1;
+          text-align: center;
+          display: inline-flex;
+          align-items: flex-start;
+          justify-content: center;
+          position: relative;
+        }
+        .item__price:before {
+          content: '$';
+          font-size: 20px;
+          color: rgb(137, 101, 180);
+          line-height: 1.4;
+          text-align: center;
+          margin-right: 6px;
+        }
+        .item__date {
+          font-size: 14px;
+          color: rgb(145, 145, 145);
+          line-height: 1.875;
+          text-align: center;
+          display: block;
+          margin-bottom: 1rem;
+        }
+        .item__lang {
+          font-size: 14px;
+          color: rgb(49, 49, 49);
+          line-height: 1.4;
+          text-align: center;
+          display: block;
+        }
+        .item p {
+          font-size: 13px;
+          color: rgb(49, 49, 49);
+          line-height: 1.875;
+          text-align: center;
+          display: block;
         }
       `}</style>
       </main>
